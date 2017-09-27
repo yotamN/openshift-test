@@ -1,0 +1,19 @@
+{
+  "name": "openshift-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yotamN/openshift-test.git"
+  },
+  "author": "Yotam Nachum <yotamnachum1@gmail.com>",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/yotamN/openshift-test/issues"
+  },
+  "homepage": "https://github.com/yotamN/openshift-test#readme"
+}
