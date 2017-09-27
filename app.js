@@ -1,28 +1,10 @@
-const Koa = require('koa');
-const app = new Koa();
+const express = require('express')
+const app = express()
 
-// x-response-time
+app.get('/', function (req, res) {
+  res.send('Hello World!')
+})
 
-app.use(async (ctx, next) => {
-  const start = Date.now();
-  await next();
-  const ms = Date.now() - start;
-  ctx.set('X-Response-Time', `${ms}ms`);
-});
-
-// logger
-
-app.use(async (ctx, next) => {
-  const start = Date.now();
-  await next();
-  const ms = Date.now() - start;
-  console.log(`${ctx.method} ${ctx.url} - ${ms}`);
-});
-
-// response
-
-app.use(async ctx => {
-  ctx.body = 'Hello World';
-});
-
-app.listen(3000);
+app.listen(3000, function () {
+  console.log('Example app listening on port 3000!')
+})
