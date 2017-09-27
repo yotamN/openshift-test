@@ -5,6 +5,7 @@ const PORT = process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 8080;
 const IP = process.env.IP   || process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0';
 
 app.get('/', function (req, res) {
+  console.log('Got request');
   res.send('Hello World!')
 })
 
