@@ -49,7 +49,7 @@ fi
 
 echo "---> Building your Node application from source"
 npm install
-echo 'test'
+./build.sh
 
 # Fix source directory permissions
 fix-permissions ./
